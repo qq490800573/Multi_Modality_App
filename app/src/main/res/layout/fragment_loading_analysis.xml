@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pattern"
+    tools:context=".ui.loading.LoadingAnalysisFragment">
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8AFFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="@dimen/loading_logo_w"
+        android:layout_height="@dimen/loading_logo_h"
+        android:src="@drawable/ic_shield"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/loading_top_logo_margin"
+        android:fontFamily="@font/noto_sans"
+        android:text="@string/loading_start_test"
+        android:textColor="@color/black"
+        android:textSize="@dimen/loading_top_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout15"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/loading_top_margin"
+        android:background="#8DFFFFFF"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45dp"
+            android:fontFamily="@font/noto_sans"
+            android:gravity="center_horizontal"
+            android:text="@string/loading_start_test2"
+            android:textColor="#3e3e3e"
+            android:textSize="@dimen/loading_mid_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/loading_progress" />
+
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="@dimen/loading_progress_w"
+            android:layout_height="@dimen/loading_progress_h"
+            android:elevation="4dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_bar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:progress="50" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loading_text_margin"
+            android:fontFamily="@font/noto_sans_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/loading"
+            android:textColor="@color/black"
+            android:textSize="@dimen/loading_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loading_progress" />
+
+        <TextView
+            android:id="@+id/loading_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/noto_sans"
+            android:gravity="center_horizontal"
+            android:textColor="@color/greyish_brown"
+            android:textSize="@dimen/loading_count_text"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/textView11"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            tools:text="@string/loading_counter" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

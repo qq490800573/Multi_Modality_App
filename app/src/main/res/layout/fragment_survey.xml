@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/pale_sky_blue_two"
+    tools:context=".ui.survey.SurveyFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/survey_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/survey_margin_top"
+            app:layout_constraintBottom_toTopOf="@+id/survey_multi_choice_button_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.95">
+
+            <TextView
+                android:id="@+id/survey_question_number"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/survey_small_button_h"
+                android:autoSizeMaxTextSize="100sp"
+                android:autoSizeMinTextSize="20sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:textColor="@color/darkish_blue"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/survey_stt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/survey_question_number" />
+
+            <Button
+                android:id="@+id/survey_stt"
+                android:layout_width="@dimen/survey_button_width"
+                android:layout_height="@dimen/survey_small_button_h"
+                android:layout_marginEnd="@dimen/survey_button_margin"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="7sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/selector_survey_button_bg"
+                android:drawableStart="@drawable/ic_microphone"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/survey_voice_recognition"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/survey_tts_replay"
+                app:layout_constraintEnd_toStartOf="@+id/survey_tts_replay"
+                app:layout_constraintHeight_min="30dp"
+                app:layout_constraintTop_toTopOf="@+id/survey_tts_replay"
+                app:layout_constraintWidth_min="90dp"
+                tools:visibility="gone" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/survey_stt_stop"
+                android:layout_width="@dimen/survey_button_width"
+                android:layout_height="@dimen/survey_small_button_h"
+                android:layout_marginEnd="@dimen/survey_button_margin"
+                android:background="@drawable/bg_lighttish_blue_r4"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/survey_tts_replay"
+                app:layout_constraintEnd_toStartOf="@+id/survey_tts_replay"
+                app:layout_constraintTop_toTopOf="@+id/survey_tts_replay"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/ic_microphone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="15dp"
+                    android:elevation="5dp"
+                    android:src="@drawable/ic_recording"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView11"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/survey_tts_replay"
+                android:layout_width="@dimen/survey_button_width"
+                android:layout_height="@dimen/survey_small_button_h"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="7sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/selector_survey_button_bg"
+                android:drawableStart="@drawable/ic_replay"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="center"
+                android:paddingStart="12dp"
+                android:paddingEnd="15dp"
+                android:text="@string/survey_tts_replay"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/survey_question_number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/survey_question_number" />
+
+            <TextView
+                android:id="@+id/survey_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/survey_question_margin_top"
+                android:ellipsize="end"
+                android:gravity="left|top"
+                android:textColor="#000000"
+                android:textSize="@dimen/survey_question_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/survey_question_number"
+                tools:text="최근 코로나19 감염증 환자 또는 밀접촉자와 만난 적이 있다." />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/survey_question_examples_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:clipChildren="false"
+                android:overScrollMode="never"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/survey_question"
+                app:layout_constraintVertical_bias="0.0"
+                app:spanCount="3"
+                tools:itemCount="6"
+                tools:layout_editor_absoluteX="15dp"
+                tools:listitem="@layout/item_survey_example"
+                tools:visibility="visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/survey_multi_choice_button_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/survey_button_h"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/survey_multi_choice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lightish_blue"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="center"
+                android:text="@string/survey_multi_choice"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/survey_button_text_size"
+                android:textStyle="bold" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/survey_yes_no_button_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/survey_button_h"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:visibility="gone">
+
+            <Button
+                android:id="@+id/survey_yes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/lightish_blue"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="center"
+                android:text="@string/survey_yes"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/survey_button_text_size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/survey_no"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/survey_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/lightish_blue"
+                android:gravity="center"
+                android:text="@string/survey_no"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/survey_button_text_size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/survey_yes" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/survey_complete_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_darkish_blue_r3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/noto_sans"
+                    android:text="@string/survey_complete"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/survey_complete_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/noto_sans"
+                    android:gravity="center"
+                    android:text="@string/survey_complete_text_1"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/survey_complete_text_1"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/survey_stt_progress_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_dimmer_r4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.2" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/noto_sans"
+                    android:gravity="center"
+                    android:text="@string/survey_stt_progress"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/survey_stt_progress_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/survey_finish_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/survey_complete_text_2_margin_top"
+            android:fontFamily="@font/noto_sans"
+            android:gravity="center_horizontal"
+            android:text="@string/survey_complete_text_2"
+            android:textColor="#000000"
+            android:textSize="@dimen/survey_complete_text_2_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/survey_complete_text_2_margin_top"
+            android:fontFamily="@font/noto_sans"
+            android:gravity="center_horizontal"
+            android:text="@string/survey_complete_text_3"
+            android:textColor="#5d5d5d"
+            android:textSize="@dimen/survey_complete_text_3_size"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

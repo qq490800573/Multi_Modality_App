@@ -1,0 +1,82 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "938e8d8fc2761083ce52be9c4f681490",
+    "entities": [
+      {
+        "tableName": "analysis",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`utc_yyyy_MM_dd_date` TEXT NOT NULL, `utc_time` INTEGER, `heart_rate` REAL, `oxygen_saturation` REAL, `respiratory_rate` REAL, `stress` REAL, `hrv_sdnn` REAL, `highest_blood_pressure` REAL, `lowest_blood_pressure` REAL, PRIMARY KEY(`utc_yyyy_MM_dd_date`))",
+        "fields": [
+          {
+            "fieldPath": "utc_yyyyMMddDate",
+            "columnName": "utc_yyyy_MM_dd_date",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "utcTime",
+            "columnName": "utc_time",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "heartRate",
+            "columnName": "heart_rate",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "oxygenSaturation",
+            "columnName": "oxygen_saturation",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "respiratoryRate",
+            "columnName": "respiratory_rate",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stress",
+            "columnName": "stress",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "hrvSdnn",
+            "columnName": "hrv_sdnn",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "highestBloodPressure",
+            "columnName": "highest_blood_pressure",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lowestBloodPressure",
+            "columnName": "lowest_blood_pressure",
+            "affinity": "REAL",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "utc_yyyy_MM_dd_date"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '938e8d8fc2761083ce52be9c4f681490')"
+    ]
+  }
+}

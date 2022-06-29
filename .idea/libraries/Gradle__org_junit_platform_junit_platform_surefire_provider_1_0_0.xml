@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.junit.platform:junit-platform-surefire-provider:1.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-surefire-provider/1.0.0/1c568329dc5890a849e724ad1b2c082c063a1937/junit-platform-surefire-provider-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-surefire-provider/1.0.0/efecacaaf8408dc8c310a81e0bfc123681196e47/junit-platform-surefire-provider-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-surefire-provider/1.0.0/641467b5e500b70d5a8c2bc514358100fb3598fb/junit-platform-surefire-provider-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="server_error">There is no response from the server.\nPlease check the network connection.</string>
+    <string name="tbd_text">Coming Soon!.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="heart_rate">Heart rate</string>
+    <string name="heart_rate_unit">bpm</string>
+    <string name="respiratory_rate">Respiration rate</string>
+    <string name="respiratory_rate_unit">rpm</string>
+    <string name="hrv_sdnn">HRV-SDNN</string>
+    <string name="hrv_sdnn_unit">sm</string>
+    <string name="oxygen_saturation">oxygen saturation</string>
+    <string name="oxygen_saturation_unit">sp</string>
+    <string name="stress">Stress</string>
+    <string name="blood_pressure">Blood pressure</string>
+    <string name="blood_pressure_unit">mmHg</string>
+    <!--Splash-->
+    <string name="splash_text">©2020 TVSTORM, Inc. All Rights Reserved.</string>
+    <!--Main-->
+    <string name="main_hello_user">Hello, "%s" Sir</string>
+    <string name="main_current_self_test">%s days have passed since the last self-check.</string>
+    <string name="main_latest_test_date">Last checkup date  :  %s</string>
+    <string name="main_my_history">Check self-test records</string>
+    <string name="main_survey">Online Check up</string>
+    <string name="main_national_covid_19_status">COVID-19 Dashboard</string>
+    <string name="main_covid_19_status_latest_update">Last Update  :  %s</string>
+    <string name="main_covid_19_status_decide_cnt">Confirmed</string>
+    <string name="main_covid_19_status_death_cnt">Deaths</string>
+    <string name="main_covid_19_status_clear_cnt">Recovered</string>
+    <string name="main_search_clinic">COVID-19\nScreening station</string>
+    <string name="main_nearby_hospitals">Nearby hospitals</string>
+    <string name="main_item_visiting_hour">Office hours</string>
+    <string name="main_item_see_more">See more</string>
+    <!--Loading-->
+    <string name="loading">Loading</string>
+    <string name="loading_counter">Move after %d seconds</string>
+    <string name="loading_start_test">Start check up</string>
+    <string name="loading_start_test2">Start the online check up\n&amp; Vital Sign Monitoring</string>
+    <!--Vital Analysis-->
+    <string name="vital_analysis_title">Vital Sign Monitoring &amp; online check up</string>
+    <string name="vital_analysis_warning">Place your face in the center.</string>
+    <string name="vital_heart_rate">Heart Rate</string>
+    <string name="vital_heart_rate_unit">(bpm)</string>
+    <string name="vital_oxygen_saturation">Oxygen Saturation</string>
+    <string name="vital_oxygen_saturation_unit">(sp)</string>
+    <string name="vital_respiratory_rate">Respiration Rate</string>
+    <string name="vital_respiratory_rate_unit">(rpm)</string>
+    <string name="vital_stress">Stress</string>
+    <string name="vital_hrv_sdnn">HRV-SDNN</string>
+    <string name="vital_hrv_sdnn_unit">(sm)</string>
+    <string name="vital_blood_pressure">Blood Pressure</string>
+    <string name="vital_blood_pressure_unit">(mmHg)</string>
+    <string name="vital_analysis_progress">Analysis progress</string>
+    <string name="vital_analysis_complete">Vital Sign Monitoring completed</string>
+    <string name="vital_analysis_complete_text">Please continue with the online check up.\nmove to automatic</string>
+    <string name="vital_stress_normal">normal</string>
+    <string name="vital_stress_danger">danger</string>
+    <!--Survey-->
+    <string name="survey_question_number">Questions %d.</string>
+    <string name="survey_voice_recognition">Voice recognition</string>
+    <string name="survey_tts_replay">Listen again</string>
+    <string name="survey_yes">Yes</string>
+    <string name="survey_no">No</string>
+    <string name="survey_multi_choice">Multiple selection completed</string>
+    <string name="survey_complete">Check</string>
+    <string name="survey_stt_progress">Voice recognition in progress..</string>
+    <string name="survey_complete_text_1">Place your face in the center.\n move to automatic</string>
+    <string name="survey_complete_text_2">Analysis…</string>
+    <string name="survey_complete_text_3">Analyzing.</string>
+    <string name="survey_stt_error_1">Please record correctly. Or please try again later.</string>
+    <string name="survey_stt_error_2">Invalid input.</string>
+    <string name="survey_question_6">Choose any of the symptoms below.</string>
+    <string name="survey_question_7">Choose any of the symptoms below.</string>
+    <string name="survey_question_8">Choose any of the symptoms below.</string>
+    <string name="survey_question_5">Do you have a cough now?</string>
+    <string name="survey_question_4">Do you have a fever regardless of the temperature measurement result?</string>
+    <string name="survey_question_3">Do you have symptoms of COPD or asthma?</string>
+    <string name="survey_question_2">Are you designated for self-isolation target?</string>
+    <string name="survey_question_1">Have you ever visited a medical institution abroad?</string>
+    <string name="survey_example_0">Fatigue</string>
+    <string name="survey_example_1">Muscle pain</string>
+    <string name="survey_example_2">Breathless</string>
+    <string name="survey_example_3">Sputum</string>
+    <string name="survey_example_4">Chest pain</string>
+    <string name="survey_example_5">chills</string>
+    <string name="survey_example_6">headache</string>
+    <string name="survey_example_7">Sore throat</string>
+    <string name="survey_example_8">Dizziness</string>
+    <string name="survey_example_9">diarrhea</string>
+    <string name="survey_example_10">Runny nose</string>
+    <string name="survey_example_11">stuffed nose</string>
+    <string name="survey_example_12">blood in the sputum</string>
+    <string name="survey_question_0">Have you recently met a patient with COVID-19 infection or a close contact?</string>
+    <!--Result-->
+    <string name="result_title">Vital Sign Monitoring results</string>
+    <string name="result_text">Vital Sign Monitoring completed</string>
+    <string name="result_survey_result">Self-examination result</string>
+    <string name="result_symptom_text_1">Abnormal signs were found.</string>
+    <string name="result_symptom_text_2">Please visit the nearest COVID-19 Screening station</string>
+    <string name="result_symptom_text_3">call a health center (dial to 1339 or area code + 120)</string>
+    <string name="result_symptom_count">Abnormal\nsymptoms</string>
+    <string name="result_symptom_list">Symptom list</string>
+    <string name="result_normal_text_1">The test result is normal.</string>
+    <string name="result_normal_text_2">Please wear a mask and join the infection control.</string>
+    <string name="result_normal_text_3">Please Wearing a mask</string>
+    <string name="result_normal_text_4">Please Wash your hands often.</string>
+    <string name="result_normal_text_5">Please make social distancing a part of life</string>
+    <string name="result_search_hospital">Finding the nearest COVID-19 Screening station</string>
+    <string name="result_back_to_main">Back</string>
+    <!--History-->
+    <string name="history_title">전자문진 이력</string>
+    <string name="history_top_text_1">진료기록을 한번에 확인하세요.</string>
+    <string name="history_top_text_2">월별 측정기록과 데이터별로 확인 하실 수 있습니다.</string>
+    <string name="history_date_select">기간선택</string>
+    <string name="history_detail_data">세부 데이터</string>
+    <string name="history_test_date">checkup date  :  %s</string>
+
+</resources>

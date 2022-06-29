@@ -1,0 +1,97 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar" />
+
+    <style name="TickerTextAppearance_main">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+        <item name="android:textSize">@dimen/main_ticker_text_size</item>
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TickerTextAppearance">
+        <item name="android:textColor">?colorPrimary</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="InfoContainerTitleTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:autoSizeMaxTextSize">100sp</item>
+        <item name="android:autoSizeMinTextSize">10sp</item>
+        <item name="android:autoSizeStepGranularity">2sp</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/brownishGrey</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="layout_constraintHeight_percent">0.25</item>
+        <item name="layout_constraintWidth_percent">0.85</item>
+    </style>
+
+    <style name="InfoContainerUnitTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:autoSizeMaxTextSize">100sp</item>
+        <item name="android:autoSizeMinTextSize">6sp</item>
+        <item name="android:autoSizeStepGranularity">2sp</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="layout_constraintDimensionRatio">1.35:1</item>
+        <item name="layout_constraintHeight_percent">0.22</item>
+        <item name="layout_constraintVertical_bias">0.9</item>
+    </style>
+
+    <style name="AnalysisTitleTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:autoSizeMaxTextSize">100sp</item>
+        <item name="android:autoSizeMinTextSize">10sp</item>
+        <item name="android:autoSizeStepGranularity">2sp</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:fontFamily">@font/noto_sans</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/darkish_blue</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="layout_constraintHeight_percent">0.3</item>
+        <item name="layout_constraintWidth_percent">0.45</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AnalysisUnitTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:autoSizeMaxTextSize">100sp</item>
+        <item name="android:autoSizeMinTextSize">8sp</item>
+        <item name="android:autoSizeStepGranularity">2sp</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:fontFamily">@font/noto_sans</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/brownishGrey</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="layout_constraintHeight_percent">0.2</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="MySpinnerDatePickerStyle" parent="android:Theme.Material.Dialog">
+        <item name="android:datePickerStyle">@style/MySpinnerDatePicker</item>
+    </style>
+
+    <style name="MySpinnerDatePicker" parent="android:Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+
+</resources>

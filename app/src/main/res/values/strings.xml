@@ -1,0 +1,120 @@
+<resources>
+    <!--App-->
+    <string name="app_name" translatable="false">Vital Sign</string>
+    <string name="empty" translatable="false"></string>
+    <string name="server_error">서버로부터 응답이 없습니다.\n네트워크 연결을 확인해주세요.</string>
+    <string name="tbd_text">준비 중입니다^^</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="heart_rate">심박수</string>
+    <string name="heart_rate_unit">bpm</string>
+    <string name="respiratory_rate">호흡</string>
+    <string name="respiratory_rate_unit">rpm</string>
+    <string name="hrv_sdnn">HRV-SDNN</string>
+    <string name="hrv_sdnn_unit">sm</string>
+    <string name="oxygen_saturation">산소포화도</string>
+    <string name="oxygen_saturation_unit">sp</string>
+    <string name="stress">스트레스</string>
+    <string name="blood_pressure">혈압</string>
+    <string name="blood_pressure_unit">mmHg</string>
+    <!--Splash-->
+    <string name="splash_text">©2020 TVSTORM, Inc. All Rights Reserved.</string>
+    <!--Main-->
+    <string name="main_hello_user">안녕하세요. "%s"님</string>
+    <string name="main_current_self_test">최근 자가 검사후 %s 일 경과 되었습니다.</string>
+    <string name="main_latest_test_date">최근 검사일  :  %s</string>
+    <string name="main_my_history">내 진료기록 확인하기</string>
+    <string name="main_survey">전자문진 시작하기</string>
+    <string name="main_national_covid_19_status">국내 코로나 COVID 19현황</string>
+    <string name="main_covid_19_status_latest_update">마지막 업데이트  :  %s</string>
+    <string name="main_covid_19_status_decide_cnt">누적확진자</string>
+    <string name="main_covid_19_status_death_cnt">누적사망자</string>
+    <string name="main_covid_19_status_clear_cnt">격리해제</string>
+    <string name="main_search_clinic">선별진료소\n찾아보기</string>
+    <string name="main_nearby_hospitals">내 주변 병원</string>
+    <string name="main_item_visiting_hour">진료시간</string>
+    <string name="main_item_see_more">자세히보기</string>
+    <!--Loading-->
+    <string name="loading">Loading</string>
+    <string name="loading_counter">%d초 후 이동합니다.</string>
+    <string name="loading_start_test">검사를 시작합니다.</string>
+    <string name="loading_start_test2">전자문진 질의/응답과\n생체검사를 시작합니다.</string>
+    <!--Vital Analysis-->
+    <string name="vital_analysis_title">생체검사&amp;전자문진</string>
+    <string name="vital_analysis_warning">얼굴을 중앙에 위치해주세요.</string>
+    <string name="vital_heart_rate">심박수</string>
+    <string name="vital_heart_rate_unit">(bpm)</string>
+    <string name="vital_oxygen_saturation">산소 포화도</string>
+    <string name="vital_oxygen_saturation_unit">(sp)</string>
+    <string name="vital_respiratory_rate">호흡</string>
+    <string name="vital_respiratory_rate_unit">(rpm)</string>
+    <string name="vital_stress">스트레스</string>
+    <string name="vital_hrv_sdnn">HRV-SDNN</string>
+    <string name="vital_hrv_sdnn_unit">(sm)</string>
+    <string name="vital_blood_pressure">혈압</string>
+    <string name="vital_blood_pressure_unit">(mmHg)</string>
+    <string name="vital_analysis_progress">분석진행률</string>
+    <string name="vital_analysis_complete">생체검사 완료</string>
+    <string name="vital_analysis_complete_text">문진 질의 응답을 계속 진행해주세요.\n자동으로 이동합니다.</string>
+    <string name="vital_stress_normal">보통</string>
+    <string name="vital_stress_danger">위험</string>
+    <!--Survey-->
+    <string name="survey_question_number">질문 %d.</string>
+    <string name="survey_voice_recognition">음성인식</string>
+    <string name="survey_tts_replay">다시듣기</string>
+    <string name="survey_yes">예</string>
+    <string name="survey_no">아니요</string>
+    <string name="survey_multi_choice">다중선택 완료</string>
+    <string name="survey_complete">문진검사 완료</string>
+    <string name="survey_stt_progress">음성인식 중..</string>
+    <string name="survey_complete_text_1">얼굴을 중앙에 위치해주세요.\n자동으로 이동합니다.</string>
+    <string name="survey_complete_text_2">Analysis…</string>
+    <string name="survey_complete_text_3">분석중입니다.</string>
+    <string name="survey_stt_error_1">올바르게 녹음해 주세요.\n또는 잠시 후 다시 시도해주세요.</string>
+    <string name="survey_stt_error_2">올바르지 않은 입력입니다.</string>
+    <string name="survey_question_0">최근 코로나19 감염증 환자 또는 밀접촉자와 만난 적이 있다.</string>
+    <string name="survey_question_1">해외 의료기관에 방문한 적이 있다.</string>
+    <string name="survey_question_2">최근 자가격리 대상자에 포함된 적이 있다.</string>
+    <string name="survey_question_3">COPD, 천식 증상이 있다.</string>
+    <string name="survey_question_4">체온 측정 결과와 상관없이 발열감이 느껴진다.</string>
+    <string name="survey_question_5">현재 기침이 있다.</string>
+    <string name="survey_question_6">아래 증상 중 해당하는 것을 모두 고르세요.</string>
+    <string name="survey_question_7">아래 증상 중 해당하는 것을 모두 고르세요.</string>
+    <string name="survey_question_8">아래 증상 중 해당하는 것을 모두 고르세요.</string>
+    <string name="survey_example_0">피로감</string>
+    <string name="survey_example_1">근육통</string>
+    <string name="survey_example_2">숨참</string>
+    <string name="survey_example_3">가래</string>
+    <string name="survey_example_4">흉통</string>
+    <string name="survey_example_5">오한</string>
+    <string name="survey_example_6">두통</string>
+    <string name="survey_example_7">목따가움</string>
+    <string name="survey_example_8">어지러움</string>
+    <string name="survey_example_9">설사</string>
+    <string name="survey_example_10">콧물</string>
+    <string name="survey_example_11">코막힘</string>
+    <string name="survey_example_12">피섞인 가래</string>
+    <!--Result-->
+    <string name="result_title">생체 검사 결과</string>
+    <string name="result_text">생체 검사가 완료되었습니다.</string>
+    <string name="result_survey_result">자가문진 결과</string>
+    <string name="result_symptom_text_1">이상 징후가 발견되었습니다.</string>
+    <string name="result_symptom_text_2">가까운 선별 진료소를 방문해주세요.</string>
+    <string name="result_symptom_text_3">(이상증상 문의전화 1339)</string>
+    <string name="result_symptom_count">이상 증상</string>
+    <string name="result_symptom_list">증상 리스트</string>
+    <string name="result_normal_text_1">검사 결과 정상입니다.</string>
+    <string name="result_normal_text_2">마스크를 착용하고 감염확산 방지에 동참해 주세요.</string>
+    <string name="result_normal_text_3">마스크를\n착용하세요.</string>
+    <string name="result_normal_text_4">손을 깨끗히\n자주 씻으세요.</string>
+    <string name="result_normal_text_5">거리두기를\n생활화하세요.</string>
+    <string name="result_search_hospital">가까운 선별진료소 찾기</string>
+    <string name="result_back_to_main">돌아가기</string>
+    <!--History-->
+    <string name="history_title">전자문진 이력</string>
+    <string name="history_top_text_1">진료기록을 한번에 확인하세요.</string>
+    <string name="history_top_text_2">월별 측정기록과 데이터별로 확인 하실 수 있습니다.</string>
+    <string name="history_date_select">기간선택</string>
+    <string name="history_detail_data">세부 데이터</string>
+    <string name="history_test_date">검사일  :  %s</string>
+
+</resources>
